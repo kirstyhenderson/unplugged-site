@@ -138,7 +138,6 @@ footer p {
 
 footer .content-wrapper {
   width: 55%;
-  margin: 50px 0;
 }
 
 footer .contact {
@@ -184,9 +183,13 @@ aside {
   justify-content: center;
 }
 
+.features h2 {
+  margin-bottom: 60px;
+}
+
 .features article {
   width: 63%;
-  margin: 30px;
+  margin: 30px 0;
 }
 
 .features .features-items {
@@ -207,11 +210,12 @@ aside {
 }
 
 .reviews h2 {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .reviews h3 {
   width: 55%;
+  margin: 20px 0;
 }
 /* --------------------  ABOUT PAGE -------------------- */
 
@@ -225,7 +229,7 @@ aside {
   justify-content: center;
 }
 
-.contact-content {
+.contact-content p {
   margin: 0;
 }
 
@@ -431,8 +435,102 @@ aside {
   }
 }
 
+  /* ==========================================================================
+   About Page
+   ========================================================================== */
+
+   .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  .mission-content p {
+    width: 45%;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 45%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
-  /* Desktop styles here */
+  /*Desktop styles here */
+
+  header {
+    padding: 15px 0;
+  }
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  /* Hero */
+  .hero-area h1 {
+    width: 80%;
+  }
+
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  /* Features */
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  /* Reviews */
+  .reviews article div {
+    width: 42%;
+  }
+
+  /* ==========================================================================
+About Page
+========================================================================== */
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+
+  /* ==========================================================================
+FAQ Page
+========================================================================== */
+  .faq h2 {
+    width: 100%;
+  }
 }
 
 /* ==========================================================================
