@@ -141,14 +141,17 @@ p {
 }
 
 img {
+  width: 100%;
 }
 
 figure {
+  margin: 0;
 }
 
 address {
   font-style: normal;
 }
+
 
 /*-------------------- Base Header - Footer Styles -------------------- */
 
@@ -223,11 +226,14 @@ footer .copyright {
   margin: 20px 0;
 }
 
-/* -------------------- HOMEPAGE -------------------- */
+/* -------------------- MOBILE STYLES - HOMEPAGE -------------------- */
 
 /* Hero Area */
 
 .hero-area {
+  background: url(../img/unplugged-retreat.jpg) center no-repeat #333;
+  background-size: cover;
+  min-height: 500px;
   display: flex;
   justify-content: center;
 }
@@ -276,6 +282,10 @@ input[type="button"] {
 /* Features */
 
 .features {
+  background: url(../img/unplugged-retreat-features.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
 }
@@ -298,6 +308,7 @@ input[type="button"] {
 }
 
 .features p {
+  text-align: center;
   margin: 0;
 }
 /* Reviews */
@@ -477,9 +488,13 @@ input[type="button"] {
       padding: 33px 0;
     }
 
-    header .content-wrapper {
+     header .content-wrapper {
       width: 100%;
       justify-content: space-between;
+    }
+
+    header figure {
+      width: 30px;
     }
 
     header nav {
@@ -496,6 +511,9 @@ input[type="button"] {
 
     /* Hero Area */
 
+    .hero-area {
+      min-height: 600px;
+    }
     .hero-area h1 {
       font-size: 3em;
       line-height: 1;
@@ -518,6 +536,10 @@ input[type="button"] {
 
     /* Features */
 
+    .features h2 {
+      margin-bottom: 20px;
+    }
+
     .features article {
       display: flex;
       align-items: center;
@@ -526,7 +548,7 @@ input[type="button"] {
     }
 
     .features .features-item-description {
-      width: 50%;
+      width: 62%;
     }
 
     /* Reviews */
@@ -535,37 +557,44 @@ input[type="button"] {
       justify-content: space-between;
     }
 
+    .reviews h2 {
+      width: 85%;
+    }
+
+    .reviews article figure,
     .reviews article div {
       width: 49%;
     }
 
+    .reviews h3 {
+      width: 75%;
+      margin: 0;
     }
-    /* Footer */
-    footer .content-wrapper {
-      width: 65%;
-    }
+  }
+  /* Footer */
+  footer .content-wrapper {
+    width: 65%;
+  }
 
-    .footer-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    footer .contact {
-      margin-bottom: 0;
-    }
+  footer .contact {
+    margin-bottom: 0;
+  }
 
-    footer h4 {
-      font-size: 1.5em;
+  footer h4 {
+    font-size: 1.5em;
+  }
 
-    }
-
-    footer p {
-      line-height: 1.125; 
-    }
-    footer .copyright {
-      width: 100%;
-    }
+  footer p {
+    line-height: 1.125;
+  }
+  footer .copyright {
+    width: 100%;
   }
 }
 
@@ -623,6 +652,12 @@ input[type="button"] {
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here */
 
+    /* General styles */
+    .content-wrapper {
+      max-width: 960px;
+    }
+
+    /* Header */
   header {
     padding: 15px 0;
   }
@@ -631,14 +666,15 @@ input[type="button"] {
     font-size: 2.25em;
   }
 
-  h3, 
+  h3,
   h4 {
     font-size: 1.875;
   }
 
-  .content-wrapper {
-    max-width: 960px;
-  }
+p {
+  font-size: 1.125em;
+  line-height: 1.333;
+}
 
   /* Hero */
   .hero-area h1 {
